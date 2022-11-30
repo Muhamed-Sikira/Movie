@@ -1,0 +1,58 @@
+<div class="kartica">
+  <div class="kartica-heder">
+    {{ pageTitle }}
+  </div>
+  <div class="kartica-gore">
+    <div class="kartica-gore1">
+      <div class="kartica-filter">Filter by:</div>
+      <input class="kartica-input" type="text" [(ngModel)]="listFilter" />
+    </div>
+    <div class="kartica-filter2">
+      <h4>Filter by: {{ listFilter }}</h4>
+    </div>
+  </div>
+  <div class="kartica-dugme">
+    <button class="kartica-switch" (click)="togleImage()">
+      {{ showImage ? "Hide" : "Show" }} Image
+    </button>
+  </div>
+  <div class="kartica-wrapper">
+    <tbody class="kartica-movieList" *ngIf="movie">
+      <tr class="kartica-hover" *ngFor="let movie of filteredMovies">
+        <div class="kartica-slika">
+          <td>
+            <img
+              *ngIf="showImage"
+              class="kartica-slika-img"
+              [src]="movie.imageUrl"
+            />
+          </td>
+        </div>
+        <div class="kartica-deskripcija">
+          <td>
+            <span class="kartica-color">Movie Name:</span> <br />
+            <a class="kartica-movie" [routerLink]="['/movie', movie.movieId]">
+              {{ movie.movieName }}
+            </a>
+          </td>
+          <td>
+            <span class="kartica-color">Genre:</span> <br />
+            {{ movie.movieGenre | convertToSpaces: "-" }}
+          </td>
+          <td>
+            <span class="kartica-color">Release Date:</span> <br />
+            {{ movie.releaseDate }}
+          </td>
+          <td>
+            <span class="kartica-color">Price:</span> <br />
+            {{ movie.price | currency: "EUR":"symbol":"1.2-2" }}
+          </td>
+          <td>
+            <span class="kartica-color">5 star rating:</span> <br />
+            <ms-star [rating]="movie.starRating"></ms-star>
+          </td>
+        </div>
+      </tr>
+    </tbody>
+  </div>
+</div>

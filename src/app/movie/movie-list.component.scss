@@ -1,0 +1,131 @@
+.kartica {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 25px;
+
+    &-heder {
+        background: linear-gradient(-60deg, rgba(226, 244, 255, 0.3) 5%, rgba(84, 107, 115, 0.3) 95%);
+        box-shadow: 0px 2px 10px 0px black;
+        color: #fff;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &-gore {
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 15px;
+        background: rgb(14, 21, 29);
+    }
+
+    &-gore1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &-filter {
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+
+    &-input {
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        height: 35px;
+        background-color: #316282;
+        color: white;
+        width: 195px;
+
+        &:hover {
+            border: 1px solid #4c9acc;
+        }
+    }
+    &-switch {
+        border: 1px solid rgb(11, 16, 23);
+        outline: none;
+        background-color: rgb(11, 16, 23);
+        padding: 10px 30px;
+        color: #fff;
+        font-weight: 700;
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(11, 16, 23);
+            background-color: #fff;
+            border: 1px solid rgb(11, 16, 23);
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &-movieList {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        background: none !important;
+    }
+
+    &-hover {
+        transition-duration: 0.3s;
+        background-color: transparent !important;
+
+        &:hover {
+            box-shadow: 4px 3px 8px 0px black;
+            transform: translatey(-3px);
+        }
+    }
+
+    &-slika {
+        width: 260px;
+
+        &-img {
+            margin: auto;
+            width: 260px;
+        }
+    }
+
+    &-deskripcija {
+        background-color: rgb(18, 26, 36);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: left;
+        gap: 25px;
+    }
+
+    &-color {
+        color: #b4b4b4;
+        font-size: 15px;
+    }
+
+    &-movie {
+        border-radius: 2px;
+        padding: 5px 10px;
+        background-color: #4c6b22;
+        color: #a3cf06;
+        font-weight: bold;
+    }
+}

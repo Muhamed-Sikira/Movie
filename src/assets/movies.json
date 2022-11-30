@@ -1,0 +1,56 @@
+[
+  {
+    "movieId": 1,
+    "movieName": "Bad Boys for Life",
+    "movieGenre": "Action-Comedy-Crime-Thriller",
+    "releaseDate": "January 17, 2020",
+    "price": 18.32,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/BadBoysForLife.jpg"
+  },
+  {
+    "movieId": 2,
+    "movieName": "Bullet Train",
+    "movieGenre": "Action-Comedy-Thriller",
+    "releaseDate": "August 5, 2022",
+    "price": 19.28,
+    "starRating": 3.6,
+    "imageUrl": "assets/images/BulletTrain.jpg"
+  },
+  {
+    "movieId": 3,
+    "movieName": "Fury",
+    "movieGenre": "Action-Drama-War",
+    "releaseDate": "August 5, 2022",
+    "price": 9.64,
+    "starRating": 3.7,
+    "imageUrl": "assets/images/Fury.jpg"
+  },
+  {
+    "movieId": 4,
+    "movieName": "John Wick 2",
+    "movieGenre": "Action-Crime-Thriller",
+    "releaseDate": "August 5, 2022",
+    "price": 6.53,
+    "starRating": 3.7,
+    "imageUrl": "assets/images/JohnWick.jpg"
+  },
+  {
+    "movieId": 5,
+    "movieName": "Saving Private Ryan",
+    "movieGenre": "Drama-War",
+    "releaseDate": "July 24, 1998",
+    "price": 15.42,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/PrivateRyan.jpg"
+  },
+  {
+    "movieId": 6,
+    "movieName": "The Matrix Resurrections",
+    "movieGenre": "Action-SciFi",
+    "releaseDate": "Decembar 22, 2021",
+    "price": 14.83,
+    "starRating": 2.8,
+    "imageUrl": "assets/images/Matrix.jpg"
+  }
+]
