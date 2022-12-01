@@ -1,0 +1,88 @@
+.kartica {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 25px;
+
+    &-heder {
+        background: linear-gradient(-60deg, rgba(226, 244, 255, 0.3) 5%, rgba(84, 107, 115, 0.3) 95%);
+        box-shadow: 0px 2px 10px 0px black;
+        color: #fff;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.login{
+    &-wrapper{
+        display: flex;
+        width: 636px;
+        margin: auto;
+        background-color: #181a21;
+        padding: 24px 32px;
+    }
+    &-fieldset{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    &-user{
+        color: #1999ff;
+    }
+    &-pass{
+        color: #afafaf;
+    }
+    &-detalji{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    &-username{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &-txt{
+        border-radius: 2px;
+        color: #fff;
+        padding: 10px;
+        background-color: #32353c;
+        outline: none;
+        font-size: 15px;
+        grid-area: input;
+        border: 1px solid #32353c;
+    }
+    &-dugmad{
+        padding: 20px;
+    }
+    &-prijava{
+        background: linear-gradient(90deg, #06BFFF 30%, #2D73FF 100%);
+        width: 270px;
+        padding: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+    &-otkazi{
+        color: #c9c9c9;
+        background: none;
+        border: none;
+        outline: none;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+}
+input{
+    width: 571px;
+}

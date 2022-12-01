@@ -1,0 +1,89 @@
+<div class="kartica">
+  <div class="kartica-heder">
+    {{ pageTitle }}
+  </div>
+  <div class="login-wrapper">
+    <form
+      novalidate
+      (ngSubmit)="login(loginForm)"
+      #loginForm="ngForm"
+      autocomplete="off"
+    >
+      <fieldset class="login-fieldset">
+        <div class="login-username">
+          <label class="login-user">Sign in</label>
+          <div class="login-input">
+            <input
+              class="login-txt"
+              id="userNameId"
+              type="text"
+              placeholder="User Name (required)"
+              required
+              ngModel
+              name="userName"
+              #userNameVar="ngModel"
+              [ngClass]="{
+                'is-invalid':
+                  (userNameVar.touched || userNameVar.dirty) &&
+                  !userNameVar.valid
+              }"
+            />
+            <span class="invalid-feedback">
+              <span>User name is required</span>
+            </span>
+          </div>
+        </div>
+        <div class="login-password">
+          <label class="login-pass" for="">Password</label>
+          <div class="login-input">
+            <input
+              class="login-txt"
+              id="passwordId"
+              type="password"
+              placeholder="Password (required)"
+              required
+              ngModel
+              name="password"
+              #passwordVar="ngModel"
+              [ngClass]="{
+                'is-invalid':
+                  (passwordVar.touched || passwordVar.dirty) &&
+                  !passwordVar.valid
+              }"
+            />
+            <span class="invalid-feedback">
+              <span>Password is required.</span>
+            </span>
+          </div>
+        </div>
+        <div class="login-dugmad">
+          <div class="login-detalji">
+            <div class="login-log">
+              <button
+                class="login-prijava"
+                type="submit"
+                style="width: 80px"
+                [disabled]="!loginForm.valid"
+              >
+                log in
+              </button>
+            </div>
+            <div class="login-cancel">
+              <button
+                class="login-otkazi"
+                type="button"
+                style="width: 80px"
+                [routerLink]="['/welcome']"
+              >
+                Cancel log in
+              </button>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="alert alert-danger" *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+</div>
