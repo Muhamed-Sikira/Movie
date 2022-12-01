@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { MovieModule } from './movie/movie.module';
+import { UserModule } from './user/user.module';
+import { MessageModule } from './messages/message.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MovieModule } from './movie/movie.module';
       {path: '', redirectTo: "home", pathMatch: "full"},
       {path: '**', redirectTo: "home", pathMatch: "full"},
     ]),
-    MovieModule
+    MovieModule,
+    UserModule,
+    MessageModule
   ],
   bootstrap: [AppComponent],
 })
