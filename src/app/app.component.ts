@@ -8,7 +8,6 @@ import { AuthService } from './user/auth.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'PRVI-DIO';
   get isLoggedIn(): boolean {
     return this.authService.isLoggedIn;
   }
