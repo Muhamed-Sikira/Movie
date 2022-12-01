@@ -1,14 +1,35 @@
 <div class="heder-wrapper">
   <div class="heder-top">
     <span class="logo">
-      <a class="ruta" routerLinkActive="active" routerLink="/home">
+      <a class="ruta" routerLinkActive="active" [routerLink]="['/home']">
         <img style="width: 35px" src="./assets/images/logo.png" alt="" />
       </a>
     </span>
     <div class="heder-link">
       <div>
-        <a class="heder-linkovi" routerLink="/movie"
+        <a class="heder-linkovi" [routerLink]="['/movie']"
           >List</a
+        >
+      </div>
+    </div>
+    <div class="heder-link">
+      <div *ngIf="isLoggedIn">
+        <a class="heder-linkovi"
+          >Welcome {{userName}}</a
+        >
+      </div>
+    </div>
+    <div class="heder-link">
+      <div>
+        <a class="heder-linkovi" [routerLink]="['/login']"
+          >log in</a
+        >
+      </div>
+    </div>
+    <div class="heder-link">
+      <div>
+        <a class="heder-linkovi" (click)="logOut()"
+          >log out</a
         >
       </div>
     </div>
